@@ -16,15 +16,35 @@ struct ContentView: View {
             VStack {
                 
                 HStack {
-                    Image(systemName: "downArrow")
+                    
+                    Image(systemName: "chevron.down")
+                        .resizable()
+                        .foregroundColor(Color.white.opacity(0.8))
+                        .frame(width: 20, height: 10)
+                        .padding(.leading, 24)
+                    Spacer()
+                    Text("Role Model")
+                        .font(.system(size: 10, weight: .bold, design: .rounded))
+                        .foregroundColor(.white.opacity(0.8))
+                    Spacer()
+                    Image(systemName: "ellipsis")
+                        .resizable()
+                        .foregroundColor(Color.white.opacity(0.8))
+                        .frame(width: 15, height: 3)
+                        .padding(.trailing, 24)
+                    
                 }
+                Spacer()
                 
                 
                 
                 Image("Superglueimage")
                         .resizable()
                         .frame(width: 355, height: 355)
-                        
+                Spacer()
+                
+                
+                
                     
             }
         }
