@@ -26,6 +26,7 @@ struct ContentView: View {
                     Text("Role Model")
                         .font(.system(size: 10, weight: .bold))
                         .foregroundColor(.white.opacity(0.8))
+                        
                     Spacer()
                     Image(systemName: "ellipsis")
                         .resizable()
@@ -41,7 +42,7 @@ struct ContentView: View {
                 Image("Superglueimage")
                         .resizable()
                         .frame(width: 355, height: 355)
-                        .padding(.bottom, 50)
+                        .padding(.bottom, 55)
                 
                 
                 HStack {
@@ -49,6 +50,7 @@ struct ContentView: View {
                         Text("Superglue")
                             .font(.system(size: 17, weight: .bold))
                             .foregroundColor(Color.white)
+                            .padding(.bottom, 0.5)
                         Text("Role Model")
                             .font(.system(size:10, weight: .bold))
                             .foregroundColor(Color.white.opacity(0.6))
@@ -61,11 +63,84 @@ struct ContentView: View {
                         .foregroundColor(Color.white.opacity(0.6))
                         .frame(width: 43, height: 17)
                 }
-                Spacer()
+                .padding(.bottom, 20)
                 
+                ZStack(alignment: .leading) {
+                    Capsule()
+                        .frame(width: 350, height: 4)
+                        .foregroundStyle(Color.white.opacity(0.15))
+                    Capsule()
+                        .frame(width: 25, height: 4)
+                        .foregroundColor(Color.white)
+                    Circle()
+                        .fill(Color.white)
+                        .frame(width: 10, height: 10)
+                        .padding(.leading, 20)
+                        
+                }
+                HStack {
+                    Text("0:11")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundColor(.white.opacity(0.6))
+                        .padding(.leading, 25)
+                    Spacer()
+                    Text("-3:09")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundColor(.white.opacity(0.6))
+                        .padding(.trailing, 25)
+                        
+                        
+                }
+                .padding(.bottom, 5)
+                
+                HStack {
+                    VStack {
+                        Image(systemName: "shuffle")
+                            .resizable()
+                            .foregroundStyle(Color.green.opacity(1.0))
+                            .frame(width: 25, height: 20)
+                            .overlay(alignment: .bottom) {
+                                Circle()
+                                    .fill(Color.green)
+                                    .frame(width: 5, height: 5)
+                                    .offset(y: 10)
+                            }
+                            .padding(.leading, 25)
+                    }
+                    Spacer()
+                    Image(systemName: "backward.end.fill")
+                        .resizable()
+                        .foregroundStyle(Color.white.opacity(1.0))
+                        .frame(width: 25, height: 25)
+                    Spacer()
+                    Image(systemName: "pause.circle.fill")
+                        .resizable()
+                        .foregroundStyle(Color.white.opacity(1.0))
+                        .frame(width: 50, height: 50)
+                    Spacer()
+                    Image(systemName: "forward.end.fill")
+                        .resizable()
+                        .foregroundStyle(Color.white.opacity(1.0))
+                        .frame(width: 25, height: 25)
+                    Spacer()
+                    VStack {
+                        Image(systemName: "repeat")
+                            .resizable()
+                            .foregroundStyle(Color.green.opacity(1.0))
+                            .frame(width: 25, height: 20)
+                            .overlay(alignment: .bottom) {
+                                Circle()
+                                    .fill(Color.green)
+                                    .frame(width: 5, height: 5)
+                                    .offset(y: 10)
+                            }
+                            .padding(.trailing, 25)
+                    }
                     
+                }
+                Spacer()
             }
-        }
+    }
     }
 }
 #Preview {
