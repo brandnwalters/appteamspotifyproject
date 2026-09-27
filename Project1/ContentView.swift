@@ -23,7 +23,7 @@ struct ContentView: View {
                         .frame(width: 20, height: 10)
                         .padding(.leading, 25)
                     Spacer()
-                    Text("Role Model")
+                    Text("Kansas Anymore (The Longest Goodbye)")
                         .font(.system(size: 10, weight: .bold))
                         .foregroundColor(.white.opacity(0.8))
                         
@@ -138,7 +138,27 @@ struct ContentView: View {
                     }
                     
                 }
+                HStack {
+                    Image(systemName: "headphones")
+                        .resizable()
+                        .foregroundStyle(Color.white.opacity(1.0))
+                        .frame(width: 15, height: 15)
+                        .padding(.leading, 25)
+                    Spacer()
+                    Image(systemName: "square.and.arrow.up")
+                        .resizable()
+                        .foregroundStyle(Color.white.opacity(1.0))
+                        .frame(width: 15, height: 15)
+                    Image(systemName: "list.bullet.below.rectangle")
+                        .resizable()
+                        .foregroundStyle(Color.white.opacity(1.0))
+                        .frame(width: 15, height: 15)
+                        .padding(.trailing, 30)
+                        .padding(.leading, 35)
+                }
+                .padding(.top, 40)
                 Spacer()
+                
             }
     }
     }
